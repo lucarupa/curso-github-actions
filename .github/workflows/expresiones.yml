@@ -10,8 +10,8 @@ on:
       nombre:
         description: 'Tu nombre'
         required: true
-        default: ${{ github.actor }}
-        type: environment
+        default: 'Luis'
+        type: string
 jobs:
   mayor:
     if: ${{ inputs.edad > 17 }}

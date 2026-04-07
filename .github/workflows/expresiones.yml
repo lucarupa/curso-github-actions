@@ -11,7 +11,7 @@ on:
         description: 'Tu nombre'
         required: true
         default: ${{ github.actor }}
-        type: string
+        type: environment
 jobs:
   mayor:
     if: ${{ inputs.edad > 17 }}

@@ -1,8 +1,13 @@
-name: Aprendiendo GitHub Actions
-run-name: ¡Estoy aprendiendo GitHub Actions!
-on: [push]
+name: triggers
+run-name: ¡Estoy aprendiendo a usar diferentes Triggers!
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    types: [ opened, synchronize, reopened ]
 jobs:
-  hola-mundo:
+  manual:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
